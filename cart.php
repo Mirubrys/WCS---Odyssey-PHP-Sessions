@@ -1,12 +1,11 @@
 <?php
-session_start();
+require 'inc/head.php';
 if(!isset($_SESSION['user']))
 {
     header('Location: login.php');
 }
+require 'inc/data/products.php';
 ?>
-<?php require 'inc/data/products.php'; ?>
-<?php require 'inc/head.php'; ?>
 <section class="cookies container-fluid">
     <div class="row">
         <h1>Your cart :</h1>

@@ -1,7 +1,7 @@
-<?php session_start(); ?>
-<?php require 'inc/data/products.php'; ?>
-<?php require 'inc/head.php'; ?>
 <?php
+require 'inc/head.php';
+require 'inc/data/products.php';
+
 if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
